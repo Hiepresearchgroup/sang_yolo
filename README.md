@@ -1,4 +1,4 @@
-# YOLO-CHKD
+# YOLO-MCHKD: A Lightweight Crack Detection Model with Cross-head Knowledge Distillation
 
 This repository contains the source code for the paper  
 
@@ -22,16 +22,12 @@ conda env create -f environment.yaml
 ```
 
 # Datasets
-Data Preparation: Download the MS COCO dataset images (training, validation, and test sets) and corresponding labels, or prepare your custom dataset as shown below. Additionally, modify the dataset path in ultralytics/cfg/datasets/coco.yaml to reflect the location of your data.
-```bash
-coco
---images
-  --train2017
-  --val2017
---labels
-  --train2017
-  --val2017
-```
+
+The details are shown in our
+
+Crack dataset is available at https://docs.ultralytics.com/datasets/segment/crack-seg/
+
+
 # Training
 Most of training configurations can change in the "Train settings" section of ultralytics/cfg/default.yaml. 
 The key factors are model, data, img, epoches, batch, device and training hyperparameters.
