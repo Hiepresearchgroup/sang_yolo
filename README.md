@@ -11,7 +11,7 @@ Detecting surface cracks plays a vital role in the health monitoring of infrastr
 
 ## Datasets
 
-The details are shown in our
+The details are shown in our paper.
 
 Crack dataset is available at https://docs.ultralytics.com/datasets/segment/crack-seg/
 
