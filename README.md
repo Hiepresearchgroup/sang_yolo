@@ -3,7 +3,11 @@
 This repository contains the source code for the paper. The complete implementation will be made publicly available upon acceptance.
 
 ## Overview
-# Installation
+
+## Abstract
+Detecting surface cracks plays a vital role in the health monitoring of infrastructure. Ideally, inspection systems are deployed on edge devices for on-site analysis. However, such deployment is hindered due to the complexity of many deep learning–based models. To address this challenge, this article proposed a lightweight crack detection model based on YOLOv8n, termed YOLO Cross-Head Knowledge Distillation (YOLO-CHKD). First, we replace the original YOLO backbone with MobileNetV3 and design a lightweight neck. Second, we swapped the CIoU loss with the EIoU loss to improve detection performance. Eventually, we introduce a soft-teacher mechanism in the cross-head knowledge distillation to recover performance and ensure both high accuracy and real-time inference capability. This approach transfers rich feature representations and decision information from the large-scale teacher model to the small-scale student model. The proposed model was successfully deployed on a Jetson Nano at 10.01 FPS, demonstrating its suitability for industrial inspection applications, and also highlighting the impact of layer number on inference time. The computational efficiency is validated on the Crack-BPHDR dataset, where YOLO-CHKD reduces the parameter number and GFLOPs by 60\% while experiencing a slight reduction in accuracy, compared to the baseline model, YOLOv8n. The generalizability is evaluated on the GC10-DET dataset, where YOLO-CHKD improved mAP0.5 by 3.87\%.
+
+## Installation
 
 Clone repo and create conda environment (recommended).
 Then install requirements.txt in a Python>=3.8.0 environment, including PyTorch>=1.8.
